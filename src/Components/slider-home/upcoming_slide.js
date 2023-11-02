@@ -19,10 +19,10 @@ const responsive = {
     },
 };
 
-const Slide = ({ movies }) => {
+const Upcoming_slide = ({ upmovies }) => {
     return (
         <Box>
-            <h3 style={{ color: "yellow" }}>Now Playing</h3>
+            <h3 style={{ color: "yellow" }}>Upcoming</h3>
             <Carousel
                 responsive={responsive}
                 swipeable={false}
@@ -33,7 +33,7 @@ const Slide = ({ movies }) => {
                 keyBoardControl={true}
                 slidesToSlide={1}
             >
-                {movies.map((movie) => (
+                {upmovies.map((movie) => (
                     <Box
                         sx={{
                             color: "white",
@@ -61,4 +61,4 @@ const Slide = ({ movies }) => {
     );
 };
 
-export default Slide;
+export default Upcoming_slide;
